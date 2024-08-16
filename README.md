@@ -1,7 +1,7 @@
-# flutter_ecommerce_app_ui
+# Flutter Ecommerce App Ui
 
 ## This application is not completed yet. Currently, I am working on it.
-A small attempt to make an Food delivery app user interface in Flutter for Android and iOS.
+A small attempt to make an Ecommerce App user interface in Flutter for Android and iOS.
 
 
 ## ✨ Requirements
