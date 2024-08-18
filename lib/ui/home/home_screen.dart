@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app_ui/core/utils/colors.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _LoginState extends State<Login> {
+class _HomeScreenState extends State<HomeScreen> {
   int _counter = 0;
 
   void _incrementCounter() {

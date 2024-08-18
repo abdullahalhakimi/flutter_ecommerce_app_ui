@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_ecommerce_app_ui/core/utils/colors.dart';
-import 'package:flutter_ecommerce_app_ui/ui/getStarted/get_started.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'core/utils/app_routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,14 +21,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'E-Commerce App',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const GetStartedScreen(),
+    return MaterialApp.router(
+      routerConfig: AppRoutes.router,
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: primary,
+        textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
+      ),
     );
   }
 }
