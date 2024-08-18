@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app_ui/core/utils/colors.dart';
 
-class SingUP extends StatefulWidget {
-  const SingUP({super.key});
+class SingUpScreen extends StatefulWidget {
+  const SingUpScreen({super.key});
 
   @override
-  State<SingUP> createState() => _SingUPState();
+  State<SingUpScreen> createState() => _SingUpScreenState();
 }
 
-class _SingUPState extends State<SingUP> {
+class _SingUpScreenState extends State<SingUpScreen> {
   int _counter = 0;
 
   void _incrementCounter() {
