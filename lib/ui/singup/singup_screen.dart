@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_app_ui/core/utils/colors.dart';
+
+import '../../utils/colors.dart';
 
 class SingUpScreen extends StatefulWidget {
   const SingUpScreen({super.key});
