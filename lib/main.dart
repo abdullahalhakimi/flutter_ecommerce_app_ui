@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_ecommerce_app_ui/core/utils/colors.dart';
+import 'package:flutter_ecommerce_app_ui/utils/app_routes.dart';
+import 'package:flutter_ecommerce_app_ui/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'core/utils/app_routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,4 +30,5 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+
 }

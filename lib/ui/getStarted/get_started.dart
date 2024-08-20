@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_ecommerce_app_ui/core/utils/colors.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-
-import '../../core/utils/app_routes.dart';
+import '../../utils/app_routes.dart';
+import '../../utils/colors.dart';
 import 'get_started_bloc.dart';
 
 class GetStartedScreen extends StatelessWidget {
