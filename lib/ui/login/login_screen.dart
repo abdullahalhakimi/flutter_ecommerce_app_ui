@@ -78,7 +78,7 @@ class LoginScreen extends StatelessWidget {
                       style: TextStyle(color: Colors.red),
                     ),
                   ],
-                  const SizedBox(height: 100),
+                  const SizedBox(height: 55),
                   Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

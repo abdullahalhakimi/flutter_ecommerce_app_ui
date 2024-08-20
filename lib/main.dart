@@ -4,7 +4,6 @@ import 'package:flutter_ecommerce_app_ui/utils/app_routes.dart';
 import 'package:flutter_ecommerce_app_ui/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
