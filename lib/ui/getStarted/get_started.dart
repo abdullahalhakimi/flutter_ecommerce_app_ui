@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import '../../utils/app_routes.dart';
+import '../../core/routes/app_routes.dart';
 import '../../utils/colors.dart';
 import 'get_started_bloc.dart';
 
@@ -48,7 +48,7 @@ class GetStartedScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(20.0),
                     child: ElevatedButton(
                       onPressed: () {
-                        context.go(AppRoutes.loginScreen);
+                        context.go(AppRoutes.singUpScreen);
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: primary, // Red button color
