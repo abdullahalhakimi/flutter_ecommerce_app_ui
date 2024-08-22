@@ -20,7 +20,7 @@ abstract class AppRoutes {
           GoRoute(
             path: 'singUpScreen',
             builder: (BuildContext context, GoRouterState state) {
-              return const SingUpScreen();
+              return const SignUpScreen();
             },
           ),
           GoRoute(
