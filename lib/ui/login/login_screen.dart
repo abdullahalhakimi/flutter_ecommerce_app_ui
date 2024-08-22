@@ -67,7 +67,7 @@ class LoginScreen extends StatelessWidget {
                       children: [
                         TextButton(
                           onPressed: () {
-                            context.go(AppRoutes.singUpScreen);
+                            context.go(AppRoutes.forgotPasswordScreen);
                           },
                           child: const Text(
                             "Forgot your password?",
