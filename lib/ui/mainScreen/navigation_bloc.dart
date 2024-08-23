@@ -7,7 +7,6 @@ enum NavigationEvent { home, shop, bag, favorites, profile }
 class NavigationBloc extends Bloc<NavigationEvent, int> {
   NavigationBloc() : super(0);
 
-  @override
   Stream<int> mapEventToState(NavigationEvent event) async* {
     switch (event) {
       case NavigationEvent.home:
