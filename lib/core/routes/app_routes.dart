@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app_ui/ui/getStarted/get_started.dart';
-import 'package:flutter_ecommerce_app_ui/ui/home/home_screen.dart';
 import 'package:flutter_ecommerce_app_ui/ui/login/login_screen.dart';
 import 'package:flutter_ecommerce_app_ui/ui/singup/singup_screen.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../ui/forgotPassword/forgot_password_screen.dart';
+import '../../ui/mainScreen/main_screen.dart';
 
 abstract class AppRoutes {
   static const getStarted = "/";
   static const loginScreen = "/loginScreen";
   static const singUpScreen = "/singUpScreen";
   static const forgotPasswordScreen = "/forgotPasswordScreen";
-  static const homeScreen = "/homeScreen";
+  static const mainScreen = "/mainScreen";
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
@@ -39,6 +39,18 @@ abstract class AppRoutes {
               return const ForgotPasswordScreen();
             },
           ),
+          GoRoute(
+            path: 'mainScreen',
+            builder: (BuildContext context, GoRouterState state) {
+              return const MainScreen();
+            },
+          ),
+          GoRoute(
+            path: 'mainScreen',
+            builder: (BuildContext context, GoRouterState state) {
+              return const MainScreen();
+            },
+          ),
           // GoRoute(
           //   path: 'singUpScreen',
           //   builder: (BuildContext context, GoRouterState state) {
@@ -50,12 +62,6 @@ abstract class AppRoutes {
           //     );
           //   },
           // ), //Will use later
-          GoRoute(
-            path: 'homeScreen',
-            builder: (BuildContext context, GoRouterState state) {
-              return const HomeScreen();
-            },
-          ),
         ],
       ),
     ],

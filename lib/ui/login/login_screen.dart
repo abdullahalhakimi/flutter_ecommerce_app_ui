@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+
 import '../../core/routes/app_routes.dart';
 import '../../utils/colors.dart';
 import '../component/singup_options.dart';
@@ -16,7 +17,6 @@ class LoginScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: background,
         resizeToAvoidBottomInset: true,
-        appBar: AppBar(backgroundColor: background),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
@@ -29,7 +29,8 @@ class LoginScreen extends StatelessWidget {
                     const Text(
                       "Login",
                       textAlign: TextAlign.start,
-                      style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 50.0),
                     TextField(
@@ -85,6 +86,7 @@ class LoginScreen extends StatelessWidget {
                         ? const CircularProgressIndicator()
                         : ElevatedButton(
                             onPressed: () {
+                              context.go(AppRoutes.mainScreen);
                               context.read<LoginBloc>().add(LoginSubmitted());
                             },
                             style: ElevatedButton.styleFrom(
@@ -98,7 +100,8 @@ class LoginScreen extends StatelessWidget {
                             ),
                             child: const Text(
                               'LOGIN',
-                              style: TextStyle(fontSize: 18,color: Colors.white),
+                              style:
+                                  TextStyle(fontSize: 18, color: Colors.white),
                             ),
                           ),
                     if (state.isFailure) ...[
