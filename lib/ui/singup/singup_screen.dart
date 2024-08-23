@@ -108,6 +108,7 @@ class SignUpScreen extends StatelessWidget {
                         ? const Center(child: CircularProgressIndicator())
                         : ElevatedButton(
                             onPressed: () {
+                              context.go(AppRoutes.mainScreen);
                               context.read<SignUpBloc>().add(SignUpSubmitted());
                             },
                             style: ElevatedButton.styleFrom(
