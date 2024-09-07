@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_ecommerce_app_ui/core/routes/app_routes.dart';
-import 'package:flutter_ecommerce_app_ui/utils/colors.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_ecommerce_app_ui/core/utils/app_colors.dart';
+import 'package:flutter_ecommerce_app_ui/core/utils/app_routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    statusBarColor: background,
+    statusBarColor: AppColors.background,
     statusBarIconBrightness: Brightness.light,
-    systemNavigationBarColor: background,
+    systemNavigationBarColor: AppColors.background,
     systemNavigationBarIconBrightness: Brightness.light,
   ));
   runApp(const MyApp());
@@ -24,10 +23,8 @@ class MyApp extends StatelessWidget {
       routerConfig: AppRoutes.router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: primary,
-        textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
+        scaffoldBackgroundColor: AppColors.background,
       ),
     );
   }
-
 }
